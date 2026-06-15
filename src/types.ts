@@ -35,3 +35,6 @@ export interface Transaction {
   /** ISO 8601 timestamp. */
   createdAt: string;
 }
+
+/** Shape of a transaction before it's been assigned a stable id. */
+export type TransactionInput = Omit<Transaction, 'id'>;
